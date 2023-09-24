@@ -25,7 +25,9 @@ The `nba-api` is a meticulously crafted FastAPI application that serves as a gat
   - [Technology Stack](#technology-stack)
   - [Logging](#logging)
   - [License](#license)
-  - [Contribution](#contribution)
+  - [Feedback and Suggestions](#feedback-and-suggestions)
+    - [How to Provide Feedback](#how-to-provide-feedback)
+    - [Code of Conduct](#code-of-conduct)
 
 
 ## Key Features
@@ -212,10 +214,16 @@ Logs are maintained in the `app.log` file. The log format includes the timestamp
 This project is licensed under the MIT License. For the full license text, please refer to the `LICENSE` file in the project repository.
 
 
-## Contribution
+## Feedback and Suggestions
 
-[Provide guidelines on how others can contribute to this project if applicable.]
+While I am not actively seeking code contributions at this moment since it is a relatively small project, I value your feedback and suggestions. Your insights can help me make this project even better!
 
----
+### How to Provide Feedback
 
-With this updated structure, we can proceed to refine other sections or add any additional information you'd like.
+1. **Issues**: If you encounter any issues or have feature requests, please open a [new issue](https://github.com/dizzydwarfus/nba-api/issues/new) on the GitHub repository. Describe the issue in detail, and I'll do our best to address it.
+2. **Discussions**: I'm open to general feedback, suggestions, or discussions. Please use the [discussions tab](https://github.com/dizzydwarfus/nba-api/discussions) on our GitHub repository for this purpose.
+3. **Contact**: If you have specific queries or want to discuss something privately, feel free to reach out via [email](mailto:lianzhenyang1998@gmail.com) or reach me via [LinkedIn](https://www.linkedin.com/in/zhenyang-lian/).
+
+### Code of Conduct
+
+I expect everyone who participates in discussions or provides feedback to follow a respectful and constructive approach. Let's keep our community positive and welcoming!
