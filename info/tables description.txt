@@ -1,0 +1,42 @@
+I am trying to create an API for me to access my NBA database where I store shots taken, player, and games played data of every game. I first need to store these data in the database and then create an api in python, publish it, so I can retrievethese information to be used in another app. Please come up with my database diagram, the scripts in python to store the data from a csv, and python scripts to create the api for it.
+
+Here are information regarding the columns in each table I have with data type in brackets:
+
+1) Games Played
+Date Time (datetime) - date time for when the game is played
+Visitor (string) - away team
+Visitor PTS (inteter) - points scored by visitor team
+Home (string) - home team
+Home PTS (integer) - points scored by home team
+OT  (integer) - number of overtimes if any
+Attendance (integer) - attendance at the home arena
+Arena (string) - home arena
+Date Str (string) - date represented as a string such as 2000010311930
+Visitor Short (string) - abbreviation of visitor team
+Home Short (string) - abbreviation of home team
+Game_id (string) - id of the game (unique)
+
+2) Player table
+Player Name (string) - name of the player
+From (integer) - player active from year
+To (integer) - player active to year (can be updated every year if active player still active
+Pos (string) - Position of player
+Height - height of player in feet-inch for example 6 feet 10 inches represented as 6-10
+Weight - weight of player in lbs
+Birth Date - birth date of player
+Colleges - College attended by player if any
+
+3) Shots taken table
+player_name   string - name of player, should refer to player table and replace with player id
+time_left     string - time left in the game when shots was taken, represented as a time like '11:25' which means 11 minuntes 25 seconds left on the quarter clock
+team_name     string - team of the player who took the shot, this is abbreviated as 'Philadelphia' if the team is 'Philadelphia Sixers'
+score_status  string - describe the current score of the game like 'Philadelphia now leads 2-0'
+x_shot_pos    int64 - shot position represented in coordinates on the court where it is feet x 10 where half basketball court is 47 by 50 feet and the shot coordinate x is part of the 47x10 = 470.
+y_shot_pos    int64 - shot position represented in coordinates on the court where it is feet x 10 where half basketball court is 47 by 50 feet and the shot coordinate y is part of the 50x10 = 500.      
+quarter       string - quarter of the game for example '1st quarter'
+shot_status   category - this can be either a 'make' or a 'miss'
+full_text     string - the full description of the shot taken like '1st quarter, 11:38.0 remaining<br>James Harden made 2-pointer from 10 ft<br>Philadelphia now leads 2-0'
+datetime      datetime64[ns] - date time of the game which can be interpreted from game id
+game_id       string - game id which should reference the Games Played table
+
+Please start with generating a database diagram before anything else so I can make sure it is correct, and we can refine the database design together.
