@@ -1,4 +1,4 @@
-# NBA Data API
+# 🏀 NBA Data API
 
 ## Overview
 
@@ -9,11 +9,12 @@ The `nba-api` is a meticulously crafted FastAPI application that serves as a gat
 
 ## Table of Contents
 
-- [NBA Data API](#nba-data-api)
+- [🏀 NBA Data API](#-nba-data-api)
   - [Overview](#overview)
   - [Table of Contents](#table-of-contents)
-  - [Key Features](#key-features)
-  - [Installation (For Local Testing Only)](#installation-for-local-testing-only)
+  - [🚀 Key Features](#-key-features)
+  - [📂 Project Structure](#-project-structure)
+  - [🔧 Installation (For Local Testing Only)](#-installation-for-local-testing-only)
     - [Usage](#usage)
     - [Endpoints](#endpoints)
       - [Players](#players)
@@ -22,15 +23,15 @@ The `nba-api` is a meticulously crafted FastAPI application that serves as a gat
       - [Positions](#positions)
       - [Utilities](#utilities)
   - [Database Architecture](#database-architecture)
-  - [Technology Stack](#technology-stack)
-  - [Logging](#logging)
+  - [🛠️ Technology Stack](#️-technology-stack)
+  - [📝 Logging](#-logging)
   - [License](#license)
   - [Feedback and Suggestions](#feedback-and-suggestions)
     - [How to Provide Feedback](#how-to-provide-feedback)
     - [Code of Conduct](#code-of-conduct)
 
 
-## Key Features
+## 🚀 Key Features
 
 1. **Data-Rich Endpoints**: Provides a range of endpoints from fetching player statistics to detailed shot analytics.
 2. **Error Handling**: Well-defined error handling ensures the user always receives clear and informative feedback.
@@ -38,8 +39,51 @@ The `nba-api` is a meticulously crafted FastAPI application that serves as a gat
 4. **Dynamic Logging**: Features an adaptable logging system which offers insights into application performance and potential bottlenecks.
 5. **Documentation**: Integrated with FastAPI's automatic interactive API documentation.
 
+## 📂 Project Structure
 
-## Installation (For Local Testing Only)
+```bash
+nba-api/
+├── app/
+│   ├── api/
+│   │   ├── endpoints/
+│   │   │   ├──__init__.py
+│   │   │   ├── players.py
+│   │   │   ├── shots_taken.py
+│   │   │   ├── tables.py
+│   │   │   ├── positions.py
+│   │   │   └── teams.py
+│   │   └── __init__.py
+│   ├── services/
+│   │   ├──__init__.py
+│   │   ├──player_service.py
+│   │   ├──position_service.py
+│   │   ├──shotstaken_service.py
+│   │   └──team_service.py
+│   ├── database/
+│   │   ├──__init__.py
+│   │   ├── sql_connector.py
+│   │   └── db.py
+│   ├── utils/
+│   │   ├── __init__.py
+│   │   ├── logger.py
+│   │   └── utils.py
+│   ├── models/
+│   │   ├── __init__.py
+│   │   └── models.py
+│   ├── config.py
+│   └── main.py
+├── tests/
+├── info/
+│   └── Database Description.md
+├── requirements.txt
+├── .env
+├── .gitignore
+├── app.log
+├── LICENSE
+└── README.md
+```
+
+## 🔧 Installation (For Local Testing Only)
 
 If you wish to test the API locally, follow these steps:
 
@@ -192,7 +236,7 @@ erDiagram
 
 For a more in-depth look into the database and its tables, check out the [Database Description.md](./info/Database%20Description.md).
 
-## Technology Stack
+## 🛠️ Technology Stack
 
 - **FastAPI**: A modern, fast (high-performance), web framework for building APIs with Python 3.7+ based on standard Python type hints.
 - **SQLAlchemy**: A SQL toolkit and Object-Relational Mapping (ORM) library for Python, providing an efficient way to interface with databases.
@@ -200,7 +244,7 @@ For a more in-depth look into the database and its tables, check out the [Databa
 - **MSSQL**: A relational database management system developed by Microsoft.
 
 
-## Logging
+## 📝 Logging
 
 Logs are maintained in the `app.log` file. The log format includes the timestamp, logger name, log level, and the actual message. For example:
 
